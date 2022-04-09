@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:background="#FFFFFF"
+    tools:context=".Akun">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:background="@drawable/header_bg"
+        android:padding="12dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#666"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nim"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_input"
+        android:drawableStart="@drawable/ic_baseline_account_tree_24"
+        android:hint="Kode Akun"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/umur" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_input"
+        android:drawableStart="@drawable/ic_baseline_person_people"
+        android:hint="Nama Akun"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selamat" />
+
+    <EditText
+        android:id="@+id/umur"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_input"
+        android:drawableStart="@drawable/ic_baseline_format_list_numbered_24"
+        android:hint="Tanggal Input"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_input"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:hint="PIN"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nim" />
+
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#7CB342"
+        android:padding="10dp"
+        android:text="Simpan Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="198dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#666"
+        android:layout_marginLeft="100dp"
+        android:text="Kembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+</LinearLayout>
+
+
